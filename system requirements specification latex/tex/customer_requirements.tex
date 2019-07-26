@@ -21,19 +21,98 @@ CSE Senior Design Project Specification.
 \subsubsection{Standards}
 All the user information must be encryption using \textit{MD5 encryption}.
 \subsubsection{Priority}
-The priority of this requirement relative to other specified requirements. Use the following priorities:
+
 \begin{itemize}
-\item Critical (must have or product is a failure)
+\item Critical\\ \\
 \end{itemize}
 
-\subsection{Requirement Name}
+\subsection{Login}
 \subsubsection{Description}
-Detailed requirement description...
+Application shall allow the registered user to login their account with registered username and its password. In the login page application shall allow user some way to reset their password if forgotten. 
 \subsubsection{Source}
-Source
+CSE Senior Design Project Specification.
 \subsubsection{Constraints}
-Detailed description of applicable constraints...
+\begin{itemize}
+\item User must be registered. 
+\end{itemize}
 \subsubsection{Standards}
-List of applicable standards
+All the input must be verified before using it to any queries to prevent SQL injection. 
 \subsubsection{Priority}
-Priority
+\begin{itemize}
+\item Critical\\ \\
+\end{itemize}
+
+\subsection{Allocation of space}
+\subsubsection{Description}
+Application shall allow the valid user to create customized shelf, based on the types of shelf s/he have, in order to store the items. For which:
+\begin{itemize}
+\item User should provide Name of the shelf
+\item User should provide the location for the shelf
+\item User should provide the numbers of rows and column in the shelf.
+\end{itemize}
+\subsubsection{Source}
+Customer
+\subsubsection{Constraints}
+\begin{itemize}
+\item Should be logged in to an account.
+\end{itemize}
+\subsubsection{Standards}
+N/A
+\subsubsection{Priority}
+\begin{itemize}
+\item Moderate \\ \\
+\end{itemize}
+
+\subsection{Adding item to Inventory}
+\subsubsection{Description}
+Application shall allow User to add item to their existing shelf.
+\begin{itemize}
+\item User must provide Item Name.
+\item user must provide Item Description.
+ If item is Beverage
+\begin{itemize}
+\item User may provide the name of Brewery.
+\item User may provide Style of Beverage.
+\item User may specify the format of the container.
+\end{itemize}
+\item User Can provide the expiration date of the item if any.
+\item User must provide the quantity they want to store.
+\item User can select an option to be notified before the expiration of any item in the shelf.
+\item User can set up a pin to secure the position of the specific item for not letting other user to know its position if searched.
+\end{itemize}
+
+\subsubsection{Source}
+Chris Conly
+\subsubsection{Constraints}
+\begin{itemize}
+\item User Should have at least one empty position on the shelf.
+\end{itemize}
+\subsubsection{Standards}
+\begin{itemize}
+\item System should generate some form of notification for successfully adding  
+\item System should generate some thing to be able to locate same item in future.
+\end{itemize}
+\subsubsection{Priority}
+\begin{itemize}
+\item Highly.\\ \\
+\end{itemize}
+
+\subsection{Modify Specification}
+\subsubsection{Description}
+System shall allow the authorized user to modify any thing from the added item. 
+\begin{itemize}
+\item User can change the Item name or quantity added of so other description of the item even after it is added to the shelf.
+\end{itemize}
+\subsubsection{Source}
+Team member(Utsav Acharya).
+\subsubsection{Constraints}
+\begin{itemize}
+\item Should be authorized user for that item.
+\item Item should be in the shelf.
+\end{itemize}
+\subsubsection{Standards}
+N/A
+\subsubsection{Priority}
+\begin{itemize}
+\item LOW.\\ \\
+\end{itemize}
